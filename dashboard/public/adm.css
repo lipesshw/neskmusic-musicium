@@ -1,0 +1,130 @@
+:root {
+    --background: #202020;
+    --background-light: #373b3e;
+    --background-lighter: #44494d;
+    --text-color: #ffffff;
+    --text-hover: #bbbbbb;
+    --button-color: #373b3e;
+    --button-hover: #212529;
+}
+
+@media (min-width: 992px) { h1.title { font-size: 100px !important; } }
+
+body {
+    color: var(--text-color);
+    background-color: var(--background);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    font-size: 1em !important;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.navbar-dark, .navbar-expand-lg .navbar-nav {
+    border: 0;
+    background-color: #202020;
+    text-align: center;
+}
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-brand {
+    color: var(--text-color);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
+    color: var(--text-hover);
+}
+.dropdown-menu, .dropdown-item {
+    color: var(--text-color);
+    background-color: #202020;
+}
+.dropdown-menu {
+    border: 2px solid #131313;
+}
+.dropdown-item:hover {
+    color: var(--text-hover);
+    background-color: #131313;
+}
+
+.card {
+    background-color: #131313;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.card-header {
+    background-color:  #131313;
+    color: var(--text-color);
+}
+.card-img-top {
+    border-radius: 0;
+}
+
+.music-btn {
+    color: var(--text-color);
+    background: inherit;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    padding: 0;
+    margin-right: 20px;
+    border: 0;
+    outline: none;
+    vertical-align: center;
+}
+.music-btn:hover {
+    color: var(--text-hover);
+}
+
+.button {
+    color: var(--text-color);
+    background-color: var(--button-color);
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid var(--button-color);
+    border-radius: 5px;
+    outline: none;
+    vertical-align: bottom;
+    text-align: center;
+}
+.button:hover {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover);
+}
+.mainbutton {
+    color: var(--text-color);
+    background-color: transparent;
+    border: 5px solid var(--text-color);
+}
+.mainbutton:hover {
+    color: var(--background);
+    background-color: var(--text-color);
+    border: 5px solid var(--text-color);
+}
+
+.music-form {
+    color: var(--text-color);
+    background: var(--button-color);
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    border: 2px solid var(--button-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+ul.horizontal-list {
+    background: #131313;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul.horizontal-list li {
+    display: inline-block;
+}
+
+.table {
+    color: var(--text-color);
+    background: #131313;
+    background-color: #131313;
+}

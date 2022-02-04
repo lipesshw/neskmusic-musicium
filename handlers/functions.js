@@ -364,7 +364,7 @@ function onCoolDown(message, command) {
    */
   function formatDate(date) {
     try {
-      return new Intl.DateTimeFormat("en-US").format(date);
+      return new Intl.DateTimeFormat("pt-br").format(date);
     } catch (e) {
       console.log(String(e.stack).bgRed)
       return false;

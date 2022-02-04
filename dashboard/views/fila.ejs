@@ -10,6 +10,7 @@
            
         <link rel="stylesheet" href="/index.css">
         <link rel="stylesheet" href="/card.css">
+        <link rel="stylesheet" href="/styles.css">
         <title>NeskMusic - Fila de músicas</title>    
     </head>
     <body>
@@ -56,12 +57,11 @@
           </div>
           <% }else {
           %>
-        <div class="d-flex justify-content-center head"><h1><b>We do not share any Servers ;(</b></h1>
+        <div class="d-flex justify-content-center head"><h1><b>Nenhum servidor encontrado..</b></h1>
           <p>
-            <button style="font-size: 50px;"
-            onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=<%= botClient.user.id %>&permissions=8&scope=bot%20applications.commands', '_blank')"
-            class="btn btn-success" type="button"><i class="iconify" data-icon="carbon:add-filled"></i>
-            Invite me!</button>
+            <button style="font-size: 20px;border:#202020"
+            onclick="window.open('https://discord.com/oauth2/authorize?client_id=920706767200088074&scope=bot+identify+guilds+email&permissions=2080374975&response_type=code&redirect_uri=https://web.neskapp.live/callback', '_blank')"
+            class="bn5" type="button">Adicionar!</button>
           </p>
         </div> 
         <%

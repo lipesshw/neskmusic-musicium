@@ -1,12 +1,12 @@
 {
-  "token": "OTIwNzA2NzY3MjAwMDg4MDc0.YboQ_w.Mwi8QZhxqwUmpYU684aTZiVY24A",
+  "token": "OTIwNzA2NzY3MjAwMDg4MDc0.YboQ_w.kVhukBoi6EoL_4W13WQjvUv-F9Y",
   "prefix": "-",
-  "ksoftapi": "NEEDED_FOR_LYRICS",
-  "youtubeCookie": "AIzaSyBXlWDmX74-myH9izgHYAKHNSx5Kq06ZtE",
+  "ksoftapi": "",
+  "youtubeCookie": "",
   "spotify_api": {
-        "enabled": true,
-        "clientSecret": "b4f826a273af4aad85508590353c328b",
-        "clientId": "fad946ce33ca4472ac6d01fec4994f4d"
+        "enabled": false,
+        "clientSecret": "",
+        "clientId": ""
   },
   "loadSlashsGlobal": false
 }

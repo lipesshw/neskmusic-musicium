@@ -446,9 +446,6 @@ module.exports = (client) => {
           new MessageEmbed()
           .setColor(ee.color)
           .setThumbnail(`https://img.youtube.com/vi/${song.id}/mqdefault.jpg`)
-          .setFooter("💯 " + song.user.tag, song.user.displayAvatarURL({
-            dynamic: true
-          }))
           .setTitle(`<a:musicq:938562102082277477> | Música adicionada na fila!`)
           .setDescription(`Música: [\`${song.name}\`](${song.url})  -  \`${song.formattedDuration}\``)
           .addField(`Tempo estimado:`, `\`${queue.songs.length - 1} música${queue.songs.length > 0 ? "s" : ""}\` - \`${(Math.floor((queue.duration - song.duration) / 60 * 100) / 100).toString().replace(".", ":")}\``)
@@ -460,9 +457,6 @@ module.exports = (client) => {
           new MessageEmbed()
           .setColor(ee.color)
           .setThumbnail(playlist.thumbnail.url ? playlist.thumbnail.url : `https://img.youtube.com/vi/${playlist.songs[0].id}/mqdefault.jpg`)
-          .setFooter("💯" + playlist.user.tag, playlist.user.displayAvatarURL({
-            dynamic: true
-          }))
           .setTitle(`<a:musicq:938562102082277477> | Playlist adicionada na fila!`)
           .setDescription(`Playlist: [\`${playlist.name}\`](${playlist.url ? playlist.url : ""})  -  \`${playlist.songs.length} música${playlist.songs.length > 0 ? "s" : ""}\``)
           .addField(`Tempo estimadao:`, `\`${queue.songs.length - - playlist.songs.length} música${queue.songs.length > 0 ? "s" : ""}\` - \`${(Math.floor((queue.duration - playlist.duration) / 60 * 100) / 100).toString().replace(".", ":")}\``)

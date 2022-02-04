@@ -8,7 +8,7 @@ module.exports = client => {
     try{
       const stringlength = 69;
       console.log("\n")
-      console.log(`${client.user.tag}${client.user.tag} | Online!`)
+      console.log(`${client.user.tag} | Online!`)
     }catch{ /* */ }
     change_status(client);
     //loop through the status per each 10 minutes

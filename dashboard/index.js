@@ -342,6 +342,24 @@ module.exports = client => {
       });
     })
 
+app.get('/admin', checkAuth, async (req, res) => {
+    const adminId = "918291110143614976"
+    if (req.user.id !== adminId) { return res.redirect('/') }
+      res.render("admin", {
+        req: req,
+        user: req.isAuthenticated() ? req.user : null,
+        //guild: client.guilds.cache.get(req.params.guildID),
+        botClient: client,
+        Permissions: Permissions,
+        bot: settings.website,
+        callback: settings.config.callback,
+        categories: client.categories, 
+        commands: client.commands, 
+        BotConfig: BotConfig,
+        BotFilters: BotFilters,
+        BotEmojis: BotEmojis,})
+  })
+
      app.get("*",(req,res) => {
     res.render("error", {
           req: req,
@@ -358,7 +376,6 @@ module.exports = client => {
           BotEmojis: BotEmojis,
     });
     });
-
 
     const http = require(`http`).createServer(app);
     http.listen(settings.config.http.port, () => {
