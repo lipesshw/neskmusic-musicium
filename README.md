@@ -81,4 +81,4 @@
 
 # Credits
 
-> Um agradecimento ao projeto (https://github.com/Tomato6966/Musicium/)[Musicium] e ao (https://github.com/Tomato6966/)[Tomato6966] por permitir que esse bot seja viável. <3
+> Um agradecimento ao projeto [Musicium](https://github.com/Tomato6966/Musicium/) e ao [Tomato6966](https://github.com/Tomato6966/) por permitir que esse bot seja viável. <3
