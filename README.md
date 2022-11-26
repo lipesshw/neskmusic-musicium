@@ -34,7 +34,6 @@
 
 ## Installation Guide (Hosting)
 
-> 🖖 [**Repl.it Fork**](https://replit.com/@OxyTomato/Musicium)
 > 
 > - ` 0. ` have **node.js v16.6 or higher**
 > 
